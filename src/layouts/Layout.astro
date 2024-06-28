@@ -11,29 +11,13 @@ type Props = {
 };
 
 const { title, description } = Astro.props;
-const pageTitle = 'snjnpark';
-const metaDescription = '적어두지 않으면 휘발되어 필요할 때 꺼내 쓸 수 없습니다.';
+
 ---
 
 <!doctype html>
 <html lang="ko-KR">
   <head>
-     <!-- Global Metadata -->
-    <title>{title || pageTitle}</title>
-    <meta name="description" content={description || metaDescription} />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="robots" href="/robots.txt" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href={Astro.url} />
-
-    <!-- Open Graph meta data -->
-    <meta name="og:title" content={title || pageTitle} />
-    <meta name="og:description" content={description || metaDescription} />
-    <meta property="og:type" content="website" />
-
+    <Head title={`${title} | ${SITE.TITLE}`} description={description} />
   </head>
   <body>
     <Header />
