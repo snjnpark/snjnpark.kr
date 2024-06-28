@@ -9,7 +9,13 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   site: "https://snjnpark.kr",
-  integrations: [tailwind(), sitemap(), mdx(), pagefind()],
+  integrations: [
+    tailwind(), 
+    sitemap({
+    lastmod: new Date() 
+  }),
+    mdx(), 
+    pagefind()],
   markdown: {
     shikiConfig: {
       theme: "css-variables"

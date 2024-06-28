@@ -1,40 +1,36 @@
 import type { Metadata, Site, Socials } from "@types";
 
 export const SITE: Site = {
-  TITLE: "Astro Micro",
-  DESCRIPTION: "Astro Micro is an accessible and lightweight blog.",
-  EMAIL: "trevortylerlee@gmail.com",
+  TITLE: "snjnpark",
+  DESCRIPTION: "A faint pencil mark is better than a clear memory.",
+  EMAIL: "hello@snjnpark.kr",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
-  TITLE: "Home",
-  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
+  TITLE: "snjnpark",
+  DESCRIPTION: "A faint pencil mark is better than a clear memory.",
 };
 
 export const BLOG: Metadata = {
   TITLE: "Blog",
-  DESCRIPTION: "A collection of articles on topics I am passionate about.",
+  DESCRIPTION: "If you don't write it down, you won't be able to take it out and use it when you need it.",
 };
 
 export const PROJECTS: Metadata = {
   TITLE: "Projects",
   DESCRIPTION:
-    "A collection of my projects with links to repositories and live demos.",
+    "If I think what I'm doing is reasonable, I jump in without delay.",
 };
 
 export const SOCIALS: Socials = [
   {
-    NAME: "X (formerly Twitter)",
-    HREF: "https://twitter.com/boogerbuttcheeks",
-  },
-  {
     NAME: "GitHub",
-    HREF: "https://github.com/trevortylerlee",
+    HREF: "https://github.com/snjnpark",
   },
   {
     NAME: "LinkedIn",
-    HREF: "https://www.linkedin.com/in/trevortylerlee",
+    HREF: "https://www.linkedin.com/in/seungjun-park-498a431b9",
   },
 ];
